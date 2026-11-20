@@ -1,26 +1,11 @@
-/* 
-    Data Types
-    - String
-    - Number
-    - BigInt
-    - Boolean
-    - Undefined
-    - Null
-    - Symbol
-    - Object
-*/
+// Problem of number type
+let n = 9007199254740991;
+console.log(n);
+console.log(n + 1);
+console.log(n + 2);
 
-// Number
-const x = 45;
-const y = 123.456;
-const z = -0.456;
+// min value
+console.log(Number.MIN_VALUE);
 
-console.log(x, y, z);
-
-// Binary
-const n1 = 0b1011;
-console.log(n1);
-
-// Hex
-const n2 = 0xff;
-console.log(n2);
+// max value
+console.log(Number.MAX_VALUE);
