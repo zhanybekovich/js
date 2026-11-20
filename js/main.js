@@ -1,2 +1,3 @@
-document.body.innerHTML = "<h2>This is JS script</h2>";
-document.body.innerHTML += "Hello World!";
+const sum = 5 + 8;
+console.log("Result: ");
+console.log(sum);
