@@ -1,17 +1,8 @@
-// Variables
+// Constants
 
-// old way of defining variable
-// var username;
-
-// new way
-let username;
-username = "John";
+// init constant
+const username = "Tom";
 console.log(username);
 
-// variable init
-let userAge = 35;
-console.log(userAge);
-
-// change variable value
-userAge = 45;
-console.log(userAge);
+// error
+// username = "Bob";
