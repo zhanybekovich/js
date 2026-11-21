@@ -1,12 +1,8 @@
-// string
-const user = "Tom";
-const company = "Microsoft";
-const language = "JavaScript";
+// object
 
-console.log(user);
-console.log(company);
-console.log(language);
+const user = {
+  name: "Tom",
+  age: 25,
+};
 
-// interpolation
-const text = `Name: ${user}. Company: ${company}. Language: ${language}.`;
-console.log(text);
+console.log(user.name, user.age);
