@@ -1,8 +1,13 @@
-// object
+// typeof
 
-const user = {
-  name: "Tom",
-  age: 25,
-};
+let id;
+console.log(typeof id);
 
-console.log(user.name, user.age);
+id = 45;
+console.log(typeof id);
+
+id = 45n;
+console.log(typeof id);
+
+id = "45";
+console.log(typeof id);
