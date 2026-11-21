@@ -1,22 +1,9 @@
-// comparison operators
+// logical operators
+// AND
+console.log(true && true);
 
-// equal
-console.log(5 == 5);
+// OR
+console.log(true || false);
 
-// gt
-console.log(5 > 2);
-
-// lt
-console.log(5 < 2);
-
-// gt or equal
-console.log(5 >= 3);
-
-// lt or equal
-console.log(3 <= 2);
-
-// loose
-console.log(10 == "10");
-
-// strict
-console.log(10 === "10");
+// NOT
+console.log(!true);
