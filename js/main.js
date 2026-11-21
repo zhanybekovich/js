@@ -1,54 +1,22 @@
-// arithmetics
+// comparison operators
 
-// addition
-const x = 50 + 40;
-console.log(x);
+// equal
+console.log(5 == 5);
 
-const y = x + 50;
-console.log(y);
+// gt
+console.log(5 > 2);
 
-const z = x + y;
-console.log(z);
+// lt
+console.log(5 < 2);
 
-// subtraction
-console.log(y - z);
+// gt or equal
+console.log(5 >= 3);
 
-// multiplication
-console.log(x * y);
+// lt or equal
+console.log(3 <= 2);
 
-// division
-console.log(x / y);
+// loose
+console.log(10 == "10");
 
-// modulus
-console.log(x % y);
-
-// exponent
-console.log(x ** y);
-
-// increment
-let a = 1;
-console.log(a++);
-console.log(++a);
-
-// decrement
-console.log(a--);
-console.log(--a);
-
-// assignment
-a += 5;
-console.log(a);
-
-a -= 3;
-console.log(a);
-
-a *= 3;
-console.log(a);
-
-a /= 2;
-console.log(a);
-
-a %= 2;
-console.log(a);
-
-a **= 2;
-console.log(a);
+// strict
+console.log(10 === "10");
