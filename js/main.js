@@ -1,14 +1,15 @@
-// arrays
-const myArray = ["Tom", "Bob", "Sara"];
-console.log(myArray);
+// if else
+const income = 100;
+if (income > 50) {
+  console.log("Earns enough");
+} else {
+  console.log("Work, work, work!");
+}
 
-// index
-console.log(myArray[0]);
-
-// multidimensional arrays
-const myArr2 = [
-  [1, 2, 3],
-  [4, 5, 6],
-];
-
-console.log(myArr2[1][0]);
+if (income > 50) {
+  console.log("> 50");
+} else if (income === 50) {
+  console.log("50");
+} else {
+  console.log("less 50");
+}
