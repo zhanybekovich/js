@@ -1,9 +1,7 @@
-// logical operators
-// AND
-console.log(true && true);
+// conditional statements
+const age = 20;
+age <= 17 && console.log("Access Denied");
+age >= 17 && console.log("Access Granted");
 
-// OR
-console.log(true || false);
-
-// NOT
-console.log(!true);
+age <= 17 || console.log("Access Granted");
+age > 17 || console.log("Access Denied");
