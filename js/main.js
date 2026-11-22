@@ -1,6 +1,10 @@
-// do ... while loop
-let i = 1;
-do {
+// continue ... break
+for (let i = 1; i <= 5; i++) {
+  if (i === 4) break;
   console.log(i);
-  i++;
-} while (i <= 5);
+}
+
+for (let i = 1; i <= 6; i++) {
+  if (i === 4) continue;
+  console.log(i);
+}
