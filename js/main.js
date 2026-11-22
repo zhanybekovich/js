@@ -1,7 +1,5 @@
-// conditional statements
-const age = 20;
-age <= 17 && console.log("Access Denied");
-age >= 17 && console.log("Access Granted");
-
-age <= 17 || console.log("Access Granted");
-age > 17 || console.log("Access Denied");
+// ternary operator
+const a = 1;
+const b = 2;
+const result = a < b ? a : b;
+console.log(result);
