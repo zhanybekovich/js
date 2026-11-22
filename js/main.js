@@ -1,5 +1,6 @@
-// ternary operator
-const a = 1;
-const b = 2;
-const result = a < b ? a : b;
-console.log(result);
+// nullish coalescing => returns left if it's not null or undefined
+console.log("hello" ?? "world");
+console.log(0 ?? "hello");
+console.log("" ?? "hello");
+console.log(false ?? true);
+console.log(null ?? "hello");
