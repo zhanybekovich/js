@@ -1,16 +1,16 @@
-// switch case
-const income = 200;
-switch (income) {
-  case 100:
-    console.log(100);
-    break;
-  case 200:
-    console.log(200);
-    break;
-  case 500:
-    console.log(500);
-    break;
-  default:
-    console.log("OK");
-    break;
+// for loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+const people = ["Tom", "Erik", "Bob"];
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i]);
+}
+
+for (let i = 2; i <= 5; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+  console.log("=================");
 }
