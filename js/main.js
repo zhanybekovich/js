@@ -1,19 +1,14 @@
-// type conversion
-const n1 = "5";
-const n2 = 5;
-console.log(n1 + n2); // 55
+// arrays
+const myArray = ["Tom", "Bob", "Sara"];
+console.log(myArray);
 
-// to string
-console.log(String(5));
+// index
+console.log(myArray[0]);
 
-// to int
-console.log(parseInt("10"));
-console.log(parseInt("10px"));
-console.log(parseInt("10.56"));
+// multidimensional arrays
+const myArr2 = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
 
-// to float
-console.log(parseFloat("20"));
-console.log(parseFloat("10.5px"));
-
-// to number
-console.log(+"45");
+console.log(myArr2[1][0]);
