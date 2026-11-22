@@ -1,15 +1,16 @@
-// if else
-const income = 100;
-if (income > 50) {
-  console.log("Earns enough");
-} else {
-  console.log("Work, work, work!");
-}
-
-if (income > 50) {
-  console.log("> 50");
-} else if (income === 50) {
-  console.log("50");
-} else {
-  console.log("less 50");
+// switch case
+const income = 200;
+switch (income) {
+  case 100:
+    console.log(100);
+    break;
+  case 200:
+    console.log(200);
+    break;
+  case 500:
+    console.log(500);
+    break;
+  default:
+    console.log("OK");
+    break;
 }
