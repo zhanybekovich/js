@@ -1,10 +1,10 @@
-// continue ... break
-for (let i = 1; i <= 5; i++) {
-  if (i === 4) break;
-  console.log(i);
+// for ... in
+const person = { name: "Tom", age: 25 };
+
+for (prop in person) {
+  console.log(prop);
 }
 
-for (let i = 1; i <= 6; i++) {
-  if (i === 4) continue;
-  console.log(i);
+for (prop in person) {
+  console.log(`${prop}: ${person[prop]}`);
 }
