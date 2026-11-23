@@ -1,14 +1,18 @@
-// debugging
-const numbers = [5, 3, 6, 2, 5, 1];
-
-for (let i = 0; i < numbers.length - 1; i++) {
-  for (let j = i + 1; j < numbers.length; j++) {
-    if (numbers[i] > numbers[j]) {
-      const temp = numbers[j];
-      numbers[j] = numbers[i];
-      numbers[i] = temp;
-    }
-  }
+// functions
+function hello() {
+  console.log("HELLO!");
 }
 
-console.log("numbers:", numbers);
+hello();
+hello();
+hello();
+
+const greeting = hello;
+
+greeting();
+greeting();
+
+const message = function () {
+  console.log("Hi, JS!");
+};
+message();
