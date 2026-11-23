@@ -1,15 +1,9 @@
-// function params
-function print(message) {
-  console.log(message);
+// spread operator in params
+function printPerson(...person) {
+  console.log(person[0], person[1], person[2]);
 }
 
-print("Hello");
-print("Hi");
-print("Good Bye!");
+const user1 = ["Tom", 45, "tom@tom.com"];
+const user2 = ["Pete", 30, "pete@pete.com"];
 
-function sum(a, b) {
-  const result = a + b;
-  console.log(result);
-}
-sum(2, 6);
-sum(4, 5);
+printPerson(...user1);
