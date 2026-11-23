@@ -1,10 +1,12 @@
-// for ... in
-const person = { name: "Tom", age: 25 };
+// for ... of
+const text = "hello";
 
-for (prop in person) {
-  console.log(prop);
+for (const char of text) {
+  console.log(char);
 }
 
-for (prop in person) {
-  console.log(`${prop}: ${person[prop]}`);
+const people = ["Tom", "Chuck", "Pete"];
+
+for (const person of people) {
+  console.log(person);
 }
