@@ -1,18 +1,12 @@
-// functions
-function hello() {
-  console.log("HELLO!");
+// local functions
+function print() {
+  printHello();
+  printHello();
+  printHello();
+
+  function printHello() {
+    console.log("Hello");
+  }
 }
 
-hello();
-hello();
-hello();
-
-const greeting = hello;
-
-greeting();
-greeting();
-
-const message = function () {
-  console.log("Hi, JS!");
-};
-message();
+print();
