@@ -1,19 +1,30 @@
-// function as param
-function sum(x, y) {
-  return x + y;
+// return
+function sum(a, b) {
+  return a + b;
 }
 
-function subtract(x, y) {
-  return x - y;
+const n1 = sum(2, 2);
+console.log(n1);
+
+// returning several values
+function rectangle(width, height) {
+  const perimeter = width * 2 + height * 2;
+  const area = width * height;
+
+  return [perimeter, area];
 }
 
-function operation(x, y, func) {
-  const res = func(x, y);
-  console.log(res);
+const rectData = rectangle(20, 30);
+console.log(rectData[0]);
+console.log(rectData[1]);
+
+// return object
+function rectangle2(width, height) {
+  const perimeter = width * 2 + height * 2;
+  const area = width * height;
+
+  return { perimeter: perimeter, area: area };
 }
-
-console.log("Sum");
-operation(10, 6, sum);
-
-console.log("Subtraction");
-operation(10, 2, subtract);
+const rectData2 = rectangle2(20, 30);
+console.log("Perimeter", rectData2.perimeter);
+console.log("Area", rectData2.area);
