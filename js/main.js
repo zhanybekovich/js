@@ -1,13 +1,18 @@
-// arrow function
-const hello = () => console.log("Hello");
-hello();
+// closure
+function outer() {
+  let x = 5;
+  function inner() {
+    x++;
+    console.log(x);
+  }
 
-const print = (mes) => console.log(mes);
-print("Hello again");
+  return inner;
+}
 
-const sum = (x, y) => x + y;
-console.log(sum(4, 4));
+const fn = outer();
+fn();
+fn();
 
-const user = (username, age) => ({ name: username, age: age });
-const tom = user("tom", 45);
-console.log(tom.name, tom.age);
+const fn2 = outer();
+fn2();
+fn2();
