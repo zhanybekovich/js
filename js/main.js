@@ -1,23 +1,13 @@
-// return function
-function menu(n) {
-  if (n === 1)
-    return function (x, y) {
-      return x + y;
-    };
-  else if (n === 2)
-    return function (x, y) {
-      return x - y;
-    };
-  else if (n === 3)
-    return function (x, y) {
-      return x * y;
-    };
+// arrow function
+const hello = () => console.log("Hello");
+hello();
 
-  return function () {
-    return 0;
-  };
-}
+const print = (mes) => console.log(mes);
+print("Hello again");
 
-const action = menu(1);
-const res = action(2, 5);
-console.log(res);
+const sum = (x, y) => x + y;
+console.log(sum(4, 4));
+
+const user = (username, age) => ({ name: username, age: age });
+const tom = user("tom", 45);
+console.log(tom.name, tom.age);
