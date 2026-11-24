@@ -1,8 +1,13 @@
-// default params
-function sum(x = 0, y = 0) {
-  console.log(x + y);
+// args
+function sum() {
+  let res = 0;
+  for (const n of arguments) {
+    res += n;
+  }
+
+  console.log(res);
 }
 
-sum();
-sum(2, 2);
-sum(1);
+sum(6);
+sum(6, 4);
+sum(6, 4, 5);
