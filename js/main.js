@@ -1,23 +1,19 @@
-// rest
-function sum(...numbers) {
-  let res = 0;
-  for (const n of numbers) {
-    res += n;
-  }
+// function as param
+function sum(x, y) {
+  return x + y;
+}
 
+function subtract(x, y) {
+  return x - y;
+}
+
+function operation(x, y, func) {
+  const res = func(x, y);
   console.log(res);
 }
 
-sum(1);
-sum(1, 2);
-sum(1, 2, 3);
-sum(1, 2, 3, 4);
+console.log("Sum");
+operation(10, 6, sum);
 
-function display(season, ...temps) {
-  console.log(season);
-  for (const index in temps) {
-    console.log(temps[index]);
-  }
-}
-
-display("Spring", -2, -3, -1, -4);
+console.log("Subtraction");
+operation(10, 2, subtract);
