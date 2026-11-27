@@ -1,11 +1,10 @@
-// recursion
-function factorial(n) {
-  if (n === 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
+// object methods
+const user = {};
+user.name = "Tom";
+user.age = 26;
+user.display = function () {
+  console.log(user.name);
+  console.log(user.age);
+};
 
-const res = factorial(4);
-console.log(res);
+user.display();
