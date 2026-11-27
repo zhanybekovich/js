@@ -1,4 +1,4 @@
-// object methods
+// delete attribute
 const user = {};
 user.name = "Tom";
 user.age = 26;
@@ -8,3 +8,6 @@ user.display = function () {
 };
 
 user.display();
+
+delete user.name;
+console.log(user);
