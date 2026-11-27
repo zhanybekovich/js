@@ -1,26 +1,19 @@
-// this
+// this in arrow functions
 
-// call() ... apply()
-function foo() {
-  console.log(this.bar);
-}
+// const person = {
+//   name: "Tom",
+//   say: () => console.log(this.name),
+// };
 
-var obj = { bar: "obj_bar" };
-var bar = "global bar";
+// person.say();
 
-foo();
-foo.apply(obj);
-foo.call(obj);
+const person = {
+  name: "Tom",
+  hello() {
+    console.log("Hello");
+    let say = () => console.log(`My name is ${this.name}`);
+    say();
+  },
+};
 
-// bind()
-function foo2() {
-  console.log(this.bar);
-}
-
-const obj2 = { bar: "object" };
-var bar = "global";
-
-foo2();
-
-const func = foo2.bind(obj2);
-foo2();
+person.hello();
