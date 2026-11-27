@@ -1,26 +1,26 @@
 // this
 
-// global this
-console.log(this);
-
-// ES2020 globalThis
-console.log(globalThis);
-
-// function context
+// call() ... apply()
 function foo() {
-  var bar = "local";
-  console.log(this);
-  console.log(this.bar); // undefined in strict mode
+  console.log(this.bar);
 }
 
+var obj = { bar: "obj_bar" };
+var bar = "global bar";
+
 foo();
+foo.apply(obj);
+foo.call(obj);
 
-// object context
-const obj = {
-  bar: "my object",
-  foo: function () {
-    console.log(this.bar);
-  },
-};
+// bind()
+function foo2() {
+  console.log(this.bar);
+}
 
-obj.foo();
+const obj2 = { bar: "object" };
+var bar = "global";
+
+foo2();
+
+const func = foo2.bind(obj2);
+foo2();
