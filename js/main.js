@@ -1,13 +1,8 @@
-// delete attribute
-const user = {};
-user.name = "Tom";
-user.age = 26;
-user.display = function () {
-  console.log(user.name);
-  console.log(user.age);
-};
+// fromEntries
+const personData = [
+  ["name", "Tom"],
+  ["age", 45],
+];
 
-user.display();
-
-delete user.name;
-console.log(user);
+const person = Object.fromEntries(personData);
+console.log(person);
